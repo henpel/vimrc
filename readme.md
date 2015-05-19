@@ -1,4 +1,3 @@
-testi
 This configuration expects:
 
 https://github.com/tpope/vim-pathogen
