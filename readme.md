@@ -1,5 +1,4 @@
 1. Preconditions
-Configuration expects these plugins:
 
 * https://github.com/tpope/vim-pathogen
 * https://github.com/scrooloose/syntastic
