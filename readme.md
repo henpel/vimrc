@@ -1,15 +1,15 @@
-1. Preconditions
+# Preconditions
 
 * https://github.com/tpope/vim-pathogen
 * https://github.com/scrooloose/syntastic
 * http://vim-taglist.sourceforge.net
 * https://github.com/scrooloose/nerdtree
 
-2. Installation
+# Installation
 * Copy pathogen.vim into ~/.vim/autoload and all other into ~/.vim/bundle.
 * mkdir ~/.vim/backup && mkdir ~/.vim/swap
 
-3. Bindings list
+# Bindings list
 
 Function|key|command
 --------|---|---------------------------------------------------
