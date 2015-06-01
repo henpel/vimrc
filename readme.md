@@ -16,9 +16,9 @@ Function|key|command
 Toggle nerdtree|\<F2\>|:NERDTreeToggle\<CR\>
 Toggle error list|\<F3\>|:call ErrorListToggle()\<CR\>
 Show buffers|\<F5\>|:buffers\<CR\>:buffer\<space\>
-Fix indent|\<F7\>|mzgg.=G`z\<space\>
-Show mappings|\<F8\>|:map\<space\>
-Toggle taglist|\<F9\>|:TlistToggle\<space\>
-Hide|\<F10\>|:hide\<space\>
-Vertical split|\<F11\>|:vsplit\<space\>
-Horizontal split|\<F12\>|:split\<space\>
+Fix indent|\<F7\>|mzgg.=G`z\<CR\>
+Show mappings|\<F8\>|:map\<CR\>
+Toggle taglist|\<F9\>|:TlistToggle\<CR\>
+Hide|\<F10\>|:hide\<CR\>
+Vertical split|\<F11\>|:vsplit\<CR\>
+Horizontal split|\<F12\>|:split\<CR\>
