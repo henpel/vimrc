@@ -7,7 +7,7 @@ This configuration expects:
 
 Copy pathogen.vim into ~/.vim/autoload and all other into ~/.vim/bundle.
 
-Bindings:
+Bindings i found useful:
 
 Function|key|command
 --------|---|---------------------------------------------------
