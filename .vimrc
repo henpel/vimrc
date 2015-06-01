@@ -31,7 +31,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 3
 let g:syntastic_c_armcc_args="--no_code_gen"
-let g:syntastic_c_checkers=['armcc']
+let g:syntastic_c_checkers=['gcc']
 let g:syntastic_python_checkers=['flake8']
 
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
