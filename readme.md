@@ -10,7 +10,7 @@ Copy pathogen.vim into ~/.vim/autoload and all other into ~/.vim/bundle.
 Bindings:
 
 Function|key|command
----------------------------------------------------------------
+--------|---|---------------------------------------------------
 Toggle nerdtree|\<F2\>|:NERDTreeToggle<CR>
 Toggle error list|\<F3\>|:call ErrorListToggle()<CR>
 Show buffers|\<F5\>|:buffers<CR>:buffer<Space>
