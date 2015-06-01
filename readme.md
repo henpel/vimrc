@@ -4,6 +4,7 @@
 * https://github.com/scrooloose/syntastic
 * http://vim-taglist.sourceforge.net
 * https://github.com/scrooloose/nerdtree
+* https://pypi.python.org/pypi/flake8
 
 # Installation
 * Copy pathogen.vim into ~/.vim/autoload and all other into ~/.vim/bundle.
