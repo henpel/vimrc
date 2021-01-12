@@ -1,11 +1,6 @@
-" Installation
-"  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-"  add
-"  so ~/Desktop/workspace/vimrc/.vimrc
-"  to ~/.vimrc
+" Hi
 "
-" Install plugins using Vundle
-
+"
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
