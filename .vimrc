@@ -10,6 +10,7 @@ Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'https://github.com/vim-scripts/taglist.vim.git'
 Plugin 'git@github.com:freitass/todo.txt-vim.git'
+Plugin 'git@github.com:mfukar/robotframework-vim.git'
 
 " Brief help
 " " :PluginList       - lists configured plugins
@@ -94,6 +95,7 @@ autocmd BufWritePost *.hpp   :TlistUpdate
 autocmd BufWritePost *.cpp   :TlistUpdate
 autocmd BufWritePost *.h     :TlistUpdate
 autocmd BufWritePost *.c     :TlistUpdate
+autocmd BufWritePre  *.robot :%s/\s\+$//e
 autocmd BufWritePre  *.pl    :%s/\s\+$//e
 autocmd BufWritePre  *.c     :%s/\s\+$//e
 autocmd BufWritePre  *.c     :%s/\s\+$//e
