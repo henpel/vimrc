@@ -68,13 +68,11 @@ nmap <LocalLeader>nn  :NERDTreeToggle<cr>
 nmap <LocalLeader>tt  :Tlist<cr>
 nmap <LocalLeader>so  :so %<cr>
 nmap <LocalLeader>sb  :set scrollbind<CR>
-nmap <LocalLeader>orc :split %<CR>
+nmap <LocalLeader>rc  :split %<CR>
 
 map <F1>  :NERDTreeToggle<CR>
-" map <F3> :call ErrorListToggle()<CR> // use with syntastic
 map <F5>  :buffers<CR>:buffer<Space>
 map <F6>  :ls<CR>
-map <F7>   mzgg.=G`z<CR>
 map <F9>  :TlistToggle<CR>
 map <F11> :vsplit<CR>
 map <F10> :hide<CR>
@@ -105,24 +103,6 @@ autocmd BufWritePre  *.vimrc :%s/\s\+$//e
 autocmd VimEnter * call StartUp()
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
 
-hi xMacro ctermfg=magenta cterm=NONE
-hi xOper ctermfg=Red cterm=NONE
-
-syntax match xMacro  /^#include.*/
-syntax match xMacro /^#define.*/
-syntax match xMacro /^#el.*/
-syntax match xMacro /^#if.*/
-syntax match xMacro /^#end.*/
-syntax match xOper /||/
-syntax match xOper /&&/
-syntax match xOper /==/
-syntax match xOper /!=/
-syntax match xOper />=/
-syntax match xOper /<=/
-syntax match xOper /-/
-syntax match xOper /+/
-syntax match xOper /->/
-
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
@@ -136,7 +116,6 @@ map <F6> :ls<CR>
 map <F1> :NERDTreeToggle<CR>
 map <F3> :call ErrorListToggle()<CR>
 map <C-r> :set scrollbind<CR>
-
 
 function! StartUp()
     if 0 == argc()
