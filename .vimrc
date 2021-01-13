@@ -64,9 +64,11 @@ let NERDTreeShowHidden=1
 
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
-nmap <LocalLeader>tt :Tlist<cr>
-nmap <LocalLeader>so :so %<cr>
-nmap <LocalLeader>sb :set scrollbind<CR>
+nmap <LocalLeader>nn  :NERDTreeToggle<cr>
+nmap <LocalLeader>tt  :Tlist<cr>
+nmap <LocalLeader>so  :so %<cr>
+nmap <LocalLeader>sb  :set scrollbind<CR>
+nmap <LocalLeader>orc :split %<CR>
 
 map <F1>  :NERDTreeToggle<CR>
 " map <F3> :call ErrorListToggle()<CR> // use with syntastic
@@ -86,8 +88,6 @@ let Tlist_WinWidth=28
 let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close = 1
 let g:ycm_clangd_binary_path = "/usr/bin/clangd"
-
-nmap <LocalLeader>tt :Tlist<cr>
 
 autocmd BufWritePost *.pl    :TlistUpdate
 autocmd BufWritePost *.py    :TlistUpdate
