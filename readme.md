@@ -1,21 +1,17 @@
 # Thing
-
 These instructions installs vim stuff how I'm using it.
-Could be something is missing :) as always.
 
  
 # Install
- * git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
- * git clone git@github.com:henpel/vimrc.git ~/Desktop/workspace/
- * mkdir ~/.vim/backup && mkdir ~/.vim/swap
- * echo "so ~/Desktop/workspace/vimrc/.vimrc" > ~/.vimrc
- * vim -c PluginInstall
- * cd ~/.vim/bundle/YouCompleteMe
- * python3 install.py --clangd-completer
-
-
-# Cool stuff
-https://git.wincent.com/
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone git@github.com:henpel/vimrc.git ~/Desktop/workspace/
+mkdir ~/.vim/backup && mkdir ~/.vim/swap
+echo "so ~/Desktop/workspace/vimrc/.vimrc" > ~/.vimrc
+vim -c PluginInstall
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --clangd-completer
+```
 
 # Plugins i'm using
  * git@github.com/VundleVim/Vundle.vim.git
