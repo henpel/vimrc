@@ -54,8 +54,6 @@ colorscheme elflord
 " set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 " set statusline+=%#warningmsg#
 
-nmap <LocalLeader>nn :NERDTreeToggle<cr>
-
 let mapleader = ","
 let maplocalleader = "-"
 
