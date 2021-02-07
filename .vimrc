@@ -1,8 +1,9 @@
 " Hi
-"
-"
+autocmd!
+set encoding=utf-8
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'git://git.wincent.com/command-t.git'
@@ -28,15 +29,23 @@ call vundle#end()
 filetype off
 filetype plugin indent on
 
+set syntax=on
 set nocompatible
 set t_Co=256
+set tabstop=4
+set softtabstop=0
+set expandtab
+set shiftwidth=4
+set smarttab
 set cindent
 set smartindent
-set autoindent
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set backspace=2
+
+"set tabstop=2
+"set shiftwidth=2
+"set backspace=2
+"set autoindent
+"set expandtab
+
 set nu
 set ruler
 set hlsearch
@@ -66,7 +75,9 @@ nmap <LocalLeader>nn  :NERDTreeToggle<cr>
 nmap <LocalLeader>tt  :Tlist<cr>
 nmap <LocalLeader>so  :so %<cr>
 nmap <LocalLeader>sb  :set scrollbind<CR>
-nmap <LocalLeader>rc  :split %<CR>
+nmap <LocalLeader>rc  :split ~/Desktop/workspace/vimrc/.vimrc<CR>
+nmap <LocalLeader>ss  :syntax on<CR>
+nmap <LocalLeader>bf  :buffers <CR>:buffer
 
 map <F1>  :NERDTreeToggle<CR>
 map <F5>  :buffers<CR>:buffer<Space>
@@ -97,6 +108,7 @@ autocmd BufWritePre  *.c     :%s/\s\+$//e
 autocmd BufWritePre  *.c     :%s/\s\+$//e
 autocmd BufWritePre  *.py    :%s/\s\+$//e
 autocmd BufWritePre  *.vimrc :%s/\s\+$//e
+autocmd BufWritePre  *.reqm  :%s/\s\+$//e
 
 autocmd VimEnter * call StartUp()
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
