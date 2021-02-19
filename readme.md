@@ -1,8 +1,12 @@
 # Thing
 These instructions installs vim stuff how I'm using it.
 
- 
-# Install
+# Install Vim
+./configure --enable-python3interp=yes --with-python3-command=python3
+make
+sudo make install
+
+# Install config
 ```
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 git clone git@github.com:henpel/vimrc.git ~/Desktop/workspace/
@@ -12,8 +16,7 @@ vim -c PluginInstall
 cd ~/.vim/bundle/YouCompleteMe
 python3 install.py --clangd-completer
 ```
-
-# Plugins i'm using
+# Plugins 
  * git@github.com/VundleVim/Vundle.vim.git
  * git@git.wincent.com/command-t.git
  * git@github.com:preservim/nerdtree.git

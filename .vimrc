@@ -28,23 +28,19 @@ call vundle#end()
 
 filetype off
 filetype plugin indent on
+syntax enable
 
-set syntax=on
 set nocompatible
 set t_Co=256
-set tabstop=4
-set softtabstop=0
-set expandtab
-set shiftwidth=4
 set smarttab
-set cindent
+" set cindent
 set smartindent
-
-"set tabstop=2
-"set shiftwidth=2
-"set backspace=2
-"set autoindent
-"set expandtab
+set tabstop=2
+set shiftwidth=2
+set backspace=2
+set autoindent
+set expandtab
+set softtabstop=2
 
 set nu
 set ruler
@@ -60,14 +56,15 @@ set paste
 
 colorscheme elflord
 
-" set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
-" set statusline+=%#warningmsg#
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
+set statusline+=%#warningmsg#
 
 let mapleader = ","
 let maplocalleader = "-"
 
 let NERDTreeIgnore=['\~$', '^\.git', '\.swp$', '\.DS_Store$']
 let NERDTreeShowHidden=1
+let NERDTreeNodeDelimiter = "\u00a0"
 
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
@@ -109,6 +106,7 @@ autocmd BufWritePre  *.c     :%s/\s\+$//e
 autocmd BufWritePre  *.py    :%s/\s\+$//e
 autocmd BufWritePre  *.vimrc :%s/\s\+$//e
 autocmd BufWritePre  *.reqm  :%s/\s\+$//e
+autocmd BufWritePre  *.xml   :%s/\s\+$//e
 
 autocmd VimEnter * call StartUp()
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
