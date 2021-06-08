@@ -1,9 +1,7 @@
 " Hi
-autocmd!
-set encoding=utf-8
 set rtp+=~/.vim/bundle/Vundle.vim
+filetype off
 call vundle#begin()
-
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'git://git.wincent.com/command-t.git'
@@ -25,23 +23,31 @@ Plugin 'git@github.com:mfukar/robotframework-vim.git'
 " " Put your non-Plugin stuff after this line
 
 call vundle#end()
-
-filetype off
-filetype plugin indent on
-syntax enable
-
+autocmd!
 set nocompatible
+set encoding=utf-8
+
+filetype on
+filetype plugin on
+filetype indent on
+syntax on
+
+" some issues with indent, Qad
+" :set et
+"	:set ai
+" to fix in runtime
+"
+
+
 set t_Co=256
 set smarttab
-" set cindent
+set cindent
 set smartindent
 set tabstop=2
 set shiftwidth=2
 set backspace=2
 set autoindent
-set expandtab
 set softtabstop=2
-
 set nu
 set ruler
 set hlsearch
@@ -107,6 +113,7 @@ autocmd BufWritePre  *.py    :%s/\s\+$//e
 autocmd BufWritePre  *.vimrc :%s/\s\+$//e
 autocmd BufWritePre  *.reqm  :%s/\s\+$//e
 autocmd BufWritePre  *.xml   :%s/\s\+$//e
+autocmd BufWritePre  *.json  :%s/\s\+$//e
 
 autocmd VimEnter * call StartUp()
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
