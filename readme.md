@@ -2,7 +2,7 @@
 These instructions installs vim stuff how I'm using it.
 
 # Install Vim
-./configure --enable-python3interp=yes --with-python3-command=python3
+./configure --enable-python3interp=yes --enable-pythoninterp=yes --with-python3-command=python3 --with-python3-config-dir=/usr/lib/python3.8/config-3.8-x86_64-linux-gnu/
 make
 sudo make install
 
