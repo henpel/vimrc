@@ -4,6 +4,8 @@ filetype off
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'https://github.com/scrooloose/nerdtree'
