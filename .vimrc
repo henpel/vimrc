@@ -24,30 +24,20 @@ Plugin 'git@github.com:mfukar/robotframework-vim.git'
 
 call vundle#end()
 autocmd!
-set nocompatible
-set encoding=utf-8
 
 filetype on
 filetype plugin on
 filetype indent on
 syntax on
 
-" some issues with indent, Qad
-" :set et
-"	:set ai
-" to fix in runtime
-"
 
-
-set t_Co=256
-set smarttab
-set cindent
-set smartindent
-set tabstop=2
-set shiftwidth=2
-set backspace=2
+" set nocompatible
+" set t_Co=256
 set autoindent
+set tabstop=2
 set softtabstop=2
+set shiftwidth=2
+set expandtab
 set nu
 set ruler
 set hlsearch
@@ -57,8 +47,6 @@ set directory=~/.vim/swap/
 set enc=utf-8
 set statusline+=%*
 set statusline+=%F
-set fileencoding=utf-8
-set paste
 
 colorscheme elflord
 
@@ -99,6 +87,7 @@ let Tlist_Exit_OnlyWindow=1
 let Tlist_File_Fold_Auto_Close = 1
 let g:ycm_clangd_binary_path = "/usr/bin/clangd"
 
+autocmd BufWritePost *.php    :TlistUpdate
 autocmd BufWritePost *.pl    :TlistUpdate
 autocmd BufWritePost *.py    :TlistUpdate
 autocmd BufWritePost *.hpp   :TlistUpdate
@@ -114,6 +103,7 @@ autocmd BufWritePre  *.vimrc :%s/\s\+$//e
 autocmd BufWritePre  *.reqm  :%s/\s\+$//e
 autocmd BufWritePre  *.xml   :%s/\s\+$//e
 autocmd BufWritePre  *.json  :%s/\s\+$//e
+autocmd BufWritePre  *.php   :%s/\s\+$//e
 
 autocmd VimEnter * call StartUp()
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
@@ -137,3 +127,4 @@ function! StartUp()
         NERDTree
     end
 endfunction
+
